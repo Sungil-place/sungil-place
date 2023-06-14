@@ -1,25 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import "./GNH/header";
+import HeaderMenu from "./GNH/header";
+import Navbar from "./GNN/nav";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <HeaderMenu></HeaderMenu>
+      {/* <nav className="navbar">
+        <button
+          className="toggle"
+          onClick={() => setNavbarOpen((prev) => !prev)}
+        ></button>
+        <ul></ul>
+      </nav> */}
     </div>
   );
 }
-
+//nav는 테스트임
 export default App;
